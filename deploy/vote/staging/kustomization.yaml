@@ -17,3 +17,10 @@ images:
     #digest: sha256:abcd1234efgh5678ijkl9101mnopqrstuvwx2345yzab6789cdef0123ghij4567
 
 namespace: instavote
+
+commonLabels:
+  project: instavote
+  env: staging
+
+commonAnnotations:
+  supported-by: "sre@example.com"
