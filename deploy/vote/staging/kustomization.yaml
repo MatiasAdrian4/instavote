@@ -10,6 +10,7 @@ replicas:
     count: 7
 images:
   - name: schoolofdevops/vote
+    newName: matiasadrian4/vote
     newTag: main-095bb6be-1772827934 # {"$imagepolicy": "flux-system:vote:tag"}
     #newName: lfs269/vote
     #digest: sha256:abcd1234efgh5678ijkl9101mnopqrstuvwx2345yzab6789cdef0123ghij4567
