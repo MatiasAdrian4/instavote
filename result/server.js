@@ -25,7 +25,8 @@ io.sockets.on('connection', function (socket) {
 async.retry(
   {times: 1000, interval: 1000},
   function(callback) {
-    pg.connect('postgres://postgres@db/postgres', function(err, client, done) {
+    var client = new pg.Client('postgres://postgres@db/postgres');
+    client.connect(function(err) {
       if (err) {
         console.error("Waiting for db");
       }
